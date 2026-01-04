@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unbinary Kundan - Leadership Clarity</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #fffff9;
+        color: #333;
+        margin: 0;
+      }
+
+      /* Responsive Wrapper for global side lines */
+      .page-wrapper {
+        border-left: none;
+        border-right: none;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+
+      @media (min-width: 992px) {
+        .page-wrapper {
+          border-left: 1px solid #cdcdcd;
+          border-right: 1px solid #cdcdcd;
+        }
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        border-bottom: 1px solid #cdcdcd;
+        padding: 1.5rem 0;
+        background-color: #fffff9;
+      }
+      .navbar-brand img {
+        width: 32px;
+        height: 32px;
+      }
+      .nav-link {
+        color: #666 !important;
+        font-size: 0.95rem;
+        margin-right: 1.5rem;
+      }
+      .nav-link:hover {
+        color: #000 !important;
+      }
+
+      /* Hero Section Styling */
+      .hero-section {
+        padding-top: 40px;
+        height: 750px;
+        margin-left: 80px;
+        margin-right: 80px;
+        /* border-left: #cdcdcd 1px solid; */
+        /* border-right: #cdcdcd 1px solid; */
+      }
+
+      /* RESPONSIVE FIX FOR HERO */
+      @media (max-width: 991px) {
+        .hero-section {
+          height: auto;
+          margin-left: 0;
+          margin-right: 0;
+          padding-bottom: 60px;
+          border: none;
+        }
+        .main-headline,
+        .highlight-text {
+          font-size: 2rem !important;
+        }
+      }
+
+      .main-headline {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        color: #222;
+      }
+
+      .highlight-text {
+        color: #12a5a0;
+        font-weight: 500;
+        padding-top: 0px !important;
+      }
+
+      .sub-text {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: #555;
+        max-width: 100%;
+      }
+
+      /* Button Styling */
+      .btn-orange {
+        background-color: #ff5a2c;
+        color: white;
+        border-radius: 8px;
+        padding: 8px 24px;
+        font-weight: 500;
+        border: none;
+        transition: 0.3s;
+      }
+      .btn-orange:hover {
+        background-color: #e54e24;
+        color: white;
+      }
+
+      /* Images Container */
+      .images-container {
+        margin-top: 80px;
+        position: relative;
+      }
+
+      /* Placeholder for the Author Image */
+      .author-img-container {
+        text-align: start;
+        margin-top: -120px;
+        z-index: -1;
+        position: relative;
+      }
+
+      @media (max-width: 991px) {
+        .author-img-container {
+          margin-top: 20px;
+          text-align: center;
+          height: 0px !important;
+          width: 0px !important;
+        }
+        .book-image-container {
+          text-align: center;
+          margin-bottom: 00px;
+        }
+        .book-image-container img,
+        .author-img-container img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      /* 4 States Section */
+      .states-section {
+        background: linear-gradient(
+          135deg,
+          #d4f1f4 0%,
+          #f5f5dc 50%,
+          #fff8e7 100%
+        );
+        padding: 80px 0 60px;
+      }
+
+      .section-heading {
+        font-size: 2.8rem;
+        font-weight: 400;
+        color: #2c2c2c;
+        line-height: 1.3;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .section-heading {
+          font-size: 1.8rem;
+        }
+      }
+
+      .italic-emphasis {
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .content-divider {
+        height: 1px;
+        background-color: #333;
+        margin: 40px 0;
+      }
+
+      .intro-paragraph {
+        font-size: 18px;
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .bold-highlight {
+        font-weight: 600;
+      }
+
+      .info-box {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 30px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+      }
+
+      .info-text {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      /* 4 States Grid */
+      .states-grid {
+        margin-top: 30px;
+      }
+
+      .state-card {
+        text-align: center;
+        padding-top: 20px;
+        border-top: #cdcdcd solid 1px;
+        /* border-bottom: #cdcdcd solid 1px; */
+      }
+
+      .state-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .state-icon svg {
+        width: 48px;
+        height: 48px;
+        stroke: #333;
+        stroke-width: 1.5;
+        fill: none;
+      }
+
+      .state-title {
+        font-size: 28px;
+        font-weight: 500;
+        color: #2c2c2c;
+        margin-bottom: 15px;
+      }
+
+      .state-description {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      /* Why This Matters Section */
+      .why-matters-section {
+        background-color: #fffff9;
+        padding: 0px 0;
+        border-top: #cdcdcd solid 1px;
+        border-bottom: #cdcdcd solid 1px;
+      }
+
+      .why-matter-row {
+        /* border-left: #cdcdcd solid 1px; */
+        /* border-right: #cdcdcd solid 1px; */
+        /* border-bottom: #cdcdcd solid 1px; */
+      }
+
+      @media (max-width: 991px) {
+        .why-matter-row {
+          border: none;
+          margin-top: 20px;
+        }
+        .right-column::before {
+          display: none;
+        }
+      }
+
+      .badge-pill {
+        background-color: #3a3a3a;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 25px;
+      }
+
+      .matters-heading {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #2c2c2c;
+        margin-bottom: 40px;
+        line-height: 1.2;
+      }
+
+      .matters-text {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #555;
+        margin-bottom: 30px;
+      }
+
+      .checkmark-list {
+        list-style: none;
+        padding: 0;
+        margin: 30px 0;
+      }
+
+      .checkmark-list li {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        position: relative;
+      }
+
+      .checkmark-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #4caf50;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .cta-link {
+        color: #12a5a0;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .cta-link:hover {
+        color: #0d7a77;
+        text-decoration: underline;
+      }
+
+      .illustration-container {
+        padding: 20px;
+      }
+
+      .illustration-container img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .right-column {
+        border-left: none;
+        position: relative;
+      }
+
+      .right-column::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        background-color: #cdcdcd;
+        z-index: 1;
+      }
+
+      /* 4S Fundamental Section */
+      .fundamental-section {
+        padding: 80px 0;
+        background-color: #fffff9;
+        overflow-x: hidden;
+      }
+
+      .fundamental-wrapper {
+        border-left: solid 1px #cdcdcd;
+        border-right: solid 1px #cdcdcd;
+        border-bottom: none;
+        position: relative;
+      }
+
+      .fundamental-wrapper::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        transform: translateX(-50%);
+        width: 2838px;
+        height: 1px;
+        background-color: #cdcdcd;
+        z-index: 1;
+      }
+
+      .fundamental-heading {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: #333;
+        padding: 40px 0px;
+        position: relative;
+        border: none;
+        margin-bottom: 50px;
+      }
+
+      .fundamental-heading::before,
+      .fundamental-heading::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        transform: translateX(-50%);
+        width: 2815px;
+        height: 1px;
+        background-color: #cdcdcd;
+      }
+
+      .fundamental-heading::before {
+        top: 0;
+      }
+      .fundamental-heading::after {
+        bottom: 0;
+      }
+
+      .fundamental-main-content {
+        padding: 20px 0px;
+      }
+
+      @media (max-width: 991px) {
+        .fundamental-wrapper {
+          border: none;
+        }
+        .fundamental-heading {
+          border: none;
+        }
+        .fundamental-heading::before,
+        .fundamental-heading::after,
+        .fundamental-wrapper::after {
+          width: 100vw !important;
+          border: none !important;
+          background-color: #fffff9;
+        }
+      }
+
+      .circles-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 320px;
+        aspect-ratio: 1/1;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .circle-base {
+        border-radius: 50%;
+        border: 1px solid #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+      }
+
+      .c-spirituality {
+        width: 100%;
+        height: 100%;
+        background-color: #e8f5e9;
+      }
+      .c-attainment {
+        width: 75%;
+        height: 75%;
+        background-color: #c8e6c9;
+      }
+      .c-superiority {
+        width: 50%;
+        height: 50%;
+        background-color: #a5d6a7;
+      }
+      .c-survival {
+        width: 25%;
+        height: 25%;
+        background-color: #81c784;
+      }
+
+      .circle-label {
+        font-size: 10px;
+        font-weight: 600;
+        font-family: serif;
+        position: absolute;
+        top: 15px;
+      }
+
+      .fundamental-content h4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .fundamental-content p {
+        color: #444;
+        margin-bottom: 30px;
+      }
+
+      .check-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+      }
+
+      .check-icon {
+        background-color: #f1f8e9;
+        color: #4caf50;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        margin-right: 15px;
+        flex-shrink: 0;
+        border: 1px solid #dcedc8;
+      }
+
+      .check-text {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #444;
+      }
+
+      /* Articles Section */
+      .articles-section {
+        padding: 60px 0;
+        background-color: #fffff9;
+        padding-top: 0px;
+      }
+
+      .articles-outer-container {
+        border: 1px solid #cdcdcd;
+        border-radius: 40px;
+        padding: 40px;
+        background-color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        .articles-outer-container {
+          padding: 20px;
+          border-radius: 20px;
+        }
+        .articles-title {
+          font-size: 1.8rem;
+        }
+      }
+
+      .articles-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 40px;
+      }
+
+      .articles-title {
+        font-size: 2.5rem;
+        font-weight: 400;
+      }
+
+      .articles-title em {
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .articles-subtitle {
+        width: auto;
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.4;
+      }
+
+      .article-card-link {
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s ease;
+        display: block;
+      }
+
+      .article-card-link h6 {
+        color: #333;
+        text-decoration: none;
+        line-height: 1.4;
+        margin-top: 12px;
+      }
+
+      .article-card-link:hover h6 {
+        color: #12a5a0;
+      }
+
+      .article-card-link:hover {
+        transform: translateY(-5px);
+      }
+
+      .article-card-placeholder {
+        background-color: #f0f0f0;
+        aspect-ratio: 1 / 1;
+        border-radius: 12px;
+        width: 100%;
+        border: 1px solid #eee;
+      }
+
+      .btn-dark-pill {
+        background-color: #333;
+        color: white;
+        border-radius: 12px;
+        padding: 12px 30px;
+        font-weight: 500;
+        border: none;
+        margin-top: 40px;
+        transition: background-color 0.3s;
+      }
+
+      .btn-dark-pill:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      /* Newsletter Section */
+      .newsletter-section {
+        position: relative;
+        padding: 100px 0;
+        background-color: #fff;
+        overflow: hidden;
+        border-top: 1px solid #cdcdcd;
+      }
+
+      .newsletter-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(
+          225deg,
+          #fffff9 45%,
+          #dcdcdc 50%,
+          #fafafa 56%,
+          #ffffff 80%
+        );
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.05);
+        z-index: 2;
+        border-bottom-left-radius: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .newsletter-section::before {
+          width: 150px;
+          height: 150px;
+        }
+        .newsletter-headline {
+          font-size: 1.5rem;
+        }
+      }
+
+      .newsletter-grid-bg {
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(#f0f0f0 1px, transparent 1px),
+          linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.5;
+        z-index: 0;
+      }
+
+      .newsletter-content {
+        position: relative;
+        z-index: 3;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .newsletter-headline {
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 1.3;
+        color: #333;
+        margin-bottom: 40px;
+      }
+
+      .newsletter-headline span {
+        color: #12a5a0;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .post-it {
+        background: #fffa82;
+        width: 280px;
+        padding: 30px;
+        margin: 0 auto 50px;
+        position: relative;
+        transform: rotate(-3deg);
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+        text-align: left;
+      }
+
+      .red-pin {
+        position: absolute;
+        top: -20px;
+        right: 40%;
+        width: 30px;
+        height: 30px;
+        background: radial-gradient(circle at 30% 30%, #ff5e5e, #8b0000);
+        border-radius: 50%;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+      .post-it .highlight-circle {
+        border: 5px solid rgba(255, 0, 0, 0.9);
+        border-radius: 50% 40% 50% 45%;
+        padding: 2px 10px;
+        display: inline-block;
+      }
+
+      .sub-form {
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid #333;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+      }
+
+      @media (max-width: 576px) {
+        .sub-form {
+          flex-direction: column;
+          border: none;
+        }
+        .sub-form input {
+          border: 1px solid #333 !important;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+        .sub-form button {
+          border-radius: 8px;
+          padding: 15px;
+          height: 40px;
+        }
+      }
+
+      .sub-form input {
+        flex: 1;
+        border: none;
+        padding: 15px 20px;
+        outline: none;
+      }
+      .sub-form button {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 0 30px;
+        font-weight: 500;
+      }
+
+      /* Testimonials Masonry */
+      .testimonials-section {
+        padding: 80px 0;
+        background-color: #f0f9f9;
+        border-radius: 40px;
+        margin: 40px 20px;
+      }
+
+      .testimonial-columns {
+        column-count: 3;
+        column-gap: 20px;
+      }
+
+      @media (max-width: 992px) {
+        .testimonial-columns {
+          column-count: 2;
+        }
+      }
+      @media (max-width: 768px) {
+        .testimonial-columns {
+          column-count: 1;
+        }
+        .testimonials-section {
+          margin: 20px 10px;
+          border-radius: 20px;
+        }
+      }
+
+      .tweet-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 20px;
+        break-inside: avoid;
+        border: 1px solid #e1e8ed;
+      }
+
+      /* Footer */
+      .footer-section {
+        padding: 40px 20px;
+        background-color: #fffff9;
+      }
+
+      .footer-container {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        border-radius: 40px;
+        padding: 60px 80px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .footer-logo-text {
+        font-size: 2.2rem;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .footer-logo-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #ffcc00;
+        border-radius: 50%;
+      }
+
+      .footer-nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .footer-social-links {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+      }
+
+      @media (max-width: 992px) {
+        .footer-container {
+          padding: 40px;
+          border-radius: 20px;
+        }
+        .footer-nav-container {
+          flex-direction: column;
+          gap: 30px;
+          align-items: flex-start;
+        }
+        .footer-logo-text {
+          font-size: 1.5rem;
+        }
+        .footer-social-links {
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+      }
+
+      .footer-link-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+      .footer-divider {
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-top: 40px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="">
+            <img src="images/logo.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/about-book.html">About Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about-author.html">About Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blogs.html">Blogs & articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/newsletter.html">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-lg-6">
+              <h1 class="main-headline">Leadership isn't getting harder.</h1>
+              <h1 class="highlight-text">
+                We're just leading from the<br />wrong inner state.
+              </h1>
+            </div>
+
+            <div class="col-lg-6 ps-lg-5">
+              <p class="sub-text">
+                I focus on leadership clarity for Middle India—helping founders,
+                managers, and decision-makers handle pressure and complexity. My
+                approach is based on the 4S framework from my upcoming book,
+                <i>Mantras of Happy Life</i>.
+              </p>
+              <div class="mt-3 text-lg-end text-sm-start">
+                <button class="btn btn-orange">Join Newsletter &nbsp; ›</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row images-container">
+            <div class="col-lg-6">
+              <div class="book-image-container">
+                <img src="images/books.png" alt="Book" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="author-img-container">
+                <img src="images/kundan.png" alt="Author" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="states-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <h2 class="section-heading">
+                Mantras of Happy Life is not<br />
+                a motivational book,<br />
+                <span class="italic-emphasis">it's a story of Everyone!</span>
+              </h2>
+
+              <div class="content-divider"></div>
+
+              <p class="intro-paragraph">
+                The book introduces the
+                <span class="bold-highlight">4 States (4S)</span> that quietly
+                shape how we think, decide, and lead often without our
+                awareness.
+              </p>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="info-box">
+                <p class="info-text">
+                  It's a practical lens to understand why everyday decisions
+                  feel heavy, why success often feels empty, and how leaders can
+                  move from pressure to clarity.
+                </p>
+                <p class="info-text">
+                  The book introduces the 4 States (4S) that quietly shape how
+                  we think, decide, and lead—often without our awareness.
+                </p>
+                <p class="info-text" style="margin-bottom: 10px">
+                  Every leader operates from one dominant inner state at any
+                  given moment:
+                </p>
+                <p class="info-text" style="margin-bottom: 0">
+                  <strong
+                    >Leadership quality changes when the state changes.</strong
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row states-grid">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="state-card">
+                <div class="state-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                    <path d="M2 17L12 22L22 17" />
+                    <path d="M2 12L12 17L22 12" />
+                  </svg>
+                </div>
+                <h3 class="state-title">Survival</h3>
+                <p class="state-description">
+                  driven by fear, pressure,<br />and urgency
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="state-card">
+                <div class="state-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                    />
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                    <line x1="12" y1="22.08" x2="12" y2="12" />
+                  </svg>
+                </div>
+                <h3 class="state-title">Superiority</h3>
+                <p class="state-description">
+                  driven by ego, control,<br />and validation
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="state-card">
+                <div class="state-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                    <path d="M2 17L12 22L22 17" />
+                    <path d="M2 12L12 17L22 12" />
+                  </svg>
+                </div>
+                <h3 class="state-title">Self-Attainment</h3>
+                <p class="state-description">
+                  driven by growth, clarity,<br />and responsibility
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="state-card">
+                <div class="state-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                    />
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                    <line x1="12" y1="22.08" x2="12" y2="12" />
+                  </svg>
+                </div>
+                <h3 class="state-title">Spirituality</h3>
+                <p class="state-description">
+                  driven by alignment, wider<br />perspective, and calmness
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-matters-section">
+        <div class="container">
+          <div class="row align-items-center why-matter-row">
+            <div class="col-lg-6 mb-4 left-column">
+              <span class="badge-pill">Why This Matters</span>
+              <h2 class="matters-heading">Why this Matters</h2>
+              <p class="matters-text">
+                Most problems are treated as skill gaps or execution issues but
+                there is a bigger hidden structure and structure controls the
+                behaviour.
+              </p>
+              <ul class="checkmark-list">
+                <li>
+                  Decisions feel heavy not because they're complex, but because
+                  they're made from Survival.
+                </li>
+                <li>
+                  Teams resist not because they're weak, but because Superiority
+                  is in the room.
+                </li>
+                <li>
+                  Burnout happens not due to workload, but due to misalignment.
+                </li>
+              </ul>
+              <a href="#" class="cta-link"
+                >Understanding 4S states changes everything.</a
+              >
+            </div>
+            <div class="col-lg-6 mb-4 right-column">
+              <div class="illustration-container">
+                <img
+                  src="images/illustration.png"
+                  alt="Office chaos illustration"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fundamental-section">
+        <div class="container text-center fundamental-wrapper">
+          <h2 class="fundamental-heading">4S Fundamental<br />Leadership ↓</h2>
+          <div class="row align-items-center mt-5 fundamental-main-content">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="circles-wrapper">
+                <div class="circle-base c-spirituality">
+                  <span class="circle-label">Spirituality</span>
+                  <div class="circle-base c-attainment">
+                    <span class="circle-label">Self-Attainment</span>
+                    <div class="circle-base c-superiority">
+                      <span class="circle-label">Superiority</span>
+                      <div class="circle-base c-survival">
+                        <span class="circle-label" style="top: 25px"
+                          >Survival</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-start ps-lg-5">
+              <div class="fundamental-content">
+                <h4>
+                  4S framework is not about becoming perfect.<br />It's about
+                  becoming aware.
+                </h4>
+                <p>Recognising the state you're operating from</p>
+                <div class="check-item">
+                  <div class="check-icon">✓</div>
+                  <div class="check-text">
+                    Understanding how it affects your decisions and behaviour
+                  </div>
+                </div>
+                <div class="check-item">
+                  <div class="check-icon">✓</div>
+                  <div class="check-text">
+                    Shifting consciously instead of reacting automatically
+                  </div>
+                </div>
+                <div class="check-item">
+                  <div class="check-icon">✓</div>
+                  <div class="check-text">
+                    This approach helps leaders reduce noise, act with
+                    integrity, and lead with perspective—especially in
+                    high-pressure environments common to new and mid level
+                    managers.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles-section">
+        <div class="container">
+          <div class="articles-outer-container">
+            <div class="row mb-12">
+              <div class="col-md-6">
+                <h1 class="articles-title">Latest <strong>Articles</strong></h1>
+              </div>
+              <div class="col-md-6 text-end">
+                <p class="articles-subtitle text-end">
+                  Short essays on
+                  <strong
+                    >leadership, decision-making, emotional maturity and
+                    inner-clarity</strong
+                  >
+                  written for people who lead without shouting.
+                </p>
+              </div>
+            </div>
+            <div class="row g-4" id="medium-articles-container">
+              <div class="text-center py-5">Loading latest articles...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <h2 class="display-6 fw-bold">
+                Testimonials for <em>Kundan</em>
+              </h2>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <p class="text-muted">
+                Short reflections from leaders and teams who've worked with
+                me—on <strong>clarity, maturity, and decision-making.</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial-columns">
+            <div class="tweet-card">
+              <div class="tweet-header">
+                <div class="tweet-user">
+                  <div class="user-img"></div>
+                  <div class="user-info">
+                    <h6>
+                      Oğuz
+                      <svg width="14" viewBox="0 0 24 24" fill="#1d9bf0">
+                        <path
+                          d="M22.5 12.5L20.87 10.63L21.06 8.13L18.61 7.57L17.29 5.43L14.88 6.46L13 4.5L11.12 6.46L8.71 5.43L7.39 5.43L7.39 7.57L4.94 8.13L5.13 10.63L3.5 12.5L5.13 14.37L4.94 16.87L7.39 17.43L8.71 19.57L11.12 18.54L13 20.5L14.88 18.54L17.29 19.57L18.61 17.43L21.06 16.87L20.87 14.37L22.5 12.5ZM11.09 16.39L7.54 12.84L8.96 11.42L11.09 13.56L15.61 9.04L17.03 10.46L11.09 16.39Z"
+                        />
+                      </svg>
+                    </h6>
+                    <span>@oguzyagizkara</span>
+                  </div>
+                </div>
+                <span class="tweet-badge">Top-tier Designer</span>
+              </div>
+              <p class="tweet-content">
+                Last night <a href="#">@ersadwork</a> showed me the final
+                version of <a href="#">@alignui</a> and you don't even realize
+                what awaits you, just wow 🤯
+              </p>
+              <div class="tweet-footer">
+                <span>OCT 15, 2023</span
+                ><a href="#" class="text-decoration-none">SEE ON X →</a>
+              </div>
+            </div>
+
+            <div class="tweet-card">
+              <div class="tweet-header">
+                <div class="tweet-user">
+                  <div class="user-img"></div>
+                  <div class="user-info">
+                    <h6>
+                      Yiğit Konur
+                      <svg width="14" viewBox="0 0 24 24" fill="#1d9bf0">
+                        <path
+                          d="M22.5 12.5L20.87 10.63L21.06 8.13L18.61 7.57L17.29 5.43L14.88 6.46L13 4.5L11.12 6.46L8.71 5.43L7.39 5.43L7.39 7.57L4.94 8.13L5.13 10.63L3.5 12.5L5.13 14.37L4.94 16.87L7.39 17.43L8.71 19.57L11.12 18.54L13 20.5L14.88 18.54L17.29 19.57L18.61 17.43L21.06 16.87L20.87 14.37L22.5 12.5ZM11.09 16.39L7.54 12.84L8.96 11.42L11.09 13.56L15.61 9.04L17.03 10.46L11.09 16.39Z"
+                        />
+                      </svg>
+                    </h6>
+                    <span>@yigitkonur</span>
+                  </div>
+                </div>
+                <span class="tweet-badge">Founder</span>
+              </div>
+              <p class="tweet-content">
+                A world-class design system project is currently underway. I've
+                been fortunate enough to beta test it.
+              </p>
+              <div class="tweet-footer">
+                <span>OCT 18, 2023</span
+                ><a href="#" class="text-decoration-none">SEE ON X →</a>
+              </div>
+            </div>
+
+            <div class="tweet-header">
+              <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">
+                  At dawn from the gateway to Mars, the launch of Starship’s
+                  second flight test
+                  <a href="https://t.co/ffKnsVKwG4"
+                    >pic.twitter.com/ffKnsVKwG4</a
+                  >
+                </p>
+                &mdash; SpaceX (@SpaceX)
+                <a
+                  href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw"
+                  >December 7, 2023</a
+                >
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section text-center">
+        <div class="newsletter-grid-bg"></div>
+        <div class="container newsletter-content">
+          <h2 class="newsletter-headline">
+            One short reflection each week on leadership<br />clarity, inner
+            states, and practical thinking<br /><span
+              >drawn from real situations, not theory.</span
+            >
+          </h2>
+          <div style="position: relative; display: inline-block">
+            <div class="red-pin"></div>
+            <div class="post-it">
+              <p>No spam</p>
+              <p>No hype</p>
+              <p><span class="highlight-circle">Just useful thinking.</span></p>
+            </div>
+          </div>
+          <form class="sub-form">
+            <input type="text" placeholder="Enter Email or phone No." />
+            <button type="submit">Join the Newsletter</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="container-fluid px-md-5">
+          <div class="footer-container">
+            <div class="footer-nav-container">
+              <div class="footer-logo-text">
+                UNBINARY
+                <div class="footer-logo-icon">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+              <div class="footer-social-links">
+                <a href="#" class="footer-link-item"
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  Instagram</a
+                >
+                <a href="tel:+1234567890" class="footer-link-item"
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.18-2.18a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  Phone Number</a
+                >
+              </div>
+            </div>
+            <div class="footer-divider"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      async function fetchMediumArticles() {
+        const username = "@iram.ahmed1997";
+        const container = document.getElementById("medium-articles-container");
+        const rssUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${username}`;
+        try {
+          const response = await fetch(rssUrl);
+          const data = await response.json();
+          if (data.status === "ok") {
+            container.innerHTML = "";
+            const articles = data.items.slice(0, 4);
+            articles.forEach((post) => {
+              let thumbnail = post.thumbnail;
+              if (
+                !thumbnail ||
+                thumbnail === "" ||
+                thumbnail.includes("stat?event")
+              ) {
+                const imgMatch = post.content.match(/<img[^>]+src="([^">]+)"/);
+                thumbnail = imgMatch
+                  ? imgMatch[1]
+                  : "images/article-placeholder.png";
+              }
+              const cardHtml = `
+                <div class="col-6 col-md-3">
+                    <a href="${post.link}" target="_blank" class="article-card-link" style="text-decoration: none;">
+                        <div class="article-card-placeholder" 
+                             style="background-image: url('${thumbnail}'); 
+                                    background-size: cover; 
+                                    background-position: center; 
+                                    border: 1px solid #eee; 
+                                    height: 200px; 
+                                    border-radius: 8px;">
+                        </div>
+                        <h6 class="mt-2" style="font-size: 0.85rem; font-weight: 600; color: #333; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-decoration: none;">
+                            ${post.title}
+                        </h6>
+                    </a>
+                </div>
+              `;
+              container.innerHTML += cardHtml;
+            });
+          }
+        } catch (error) {
+          console.error("Error fetching Medium posts:", error);
+          container.innerHTML =
+            '<div class="text-center py-4">Unable to load articles at this time.</div>';
+        }
+      }
+      fetchMediumArticles();
+    </script>
+  </body>
+</html>

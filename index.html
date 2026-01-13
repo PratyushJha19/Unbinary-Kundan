@@ -186,8 +186,13 @@
         background-size: 40px 40px, 40px 40px, 100% 100%; */
       }
 
-      .custom-shape-divider-top {
-        /* display: none; */
+      .custom-shape-divider-bottom {
+        border-bottom: #000000 solid 1px;
+      }
+
+      .custom-shape-divider-bottom2 {
+        /* border-bottom: #000000 solid 1px; */
+        padding: 25px;
       }
 
       .section-heading {
@@ -202,6 +207,15 @@
         .section-heading {
           font-size: 1.8rem;
         }
+
+        .custom-shape-divider-bottom .col-lg-6 {
+          margin-bottom: 0px !important;
+          padding-top: 20px;
+        }
+
+        .section-heading {
+          margin-bottom: 0px !important;
+        }
       }
 
       .italic-emphasis {
@@ -210,9 +224,9 @@
       }
 
       .content-divider {
-        height: 1px;
+        /* height: 1px;
         background-color: #333;
-        margin: 40px 0;
+        margin: 40px 0; */
       }
 
       .intro-paragraph {
@@ -227,10 +241,11 @@
       }
 
       .info-box {
-        background-color: rgba(255, 255, 255, 0.5);
+        /*background-color: rgba(255, 255, 255, 0.5);*/
         padding: 30px;
         border-radius: 12px;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
+        padding-bottom: 0px;
       }
 
       .info-text {
@@ -763,12 +778,19 @@
 
       .sub-form {
         display: flex;
-        max-width: 600px;
+        max-width: 250px;
         margin: 0 auto;
         border: 1px solid #333;
         border-radius: 8px;
         overflow: hidden;
         background: #fff;
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 20px 30px;
+        font-weight: 500;
+        margin-top: 30px;
+        text-align: center !important;
       }
 
       @media (max-width: 576px) {
@@ -789,17 +811,12 @@
       }
 
       .sub-form input {
-        flex: 1;
+        /* flex: 1;
         border: none;
         padding: 15px 20px;
-        outline: none;
+        outline: none; */
       }
       .sub-form button {
-        background: #333;
-        color: #fff;
-        border: none;
-        padding: 0 30px;
-        font-weight: 500;
       }
 
       /* Testimonials Masonry */
@@ -976,7 +993,11 @@
                 <i>Mantras of Happy Life</i>.
               </p>
               <div class="mt-3 text-sm-start">
-                <button class="btn btn-orange">Join Newsletter &nbsp; ›</button>
+                <a
+                  class="btn btn-orange"
+                  href="https://leadershipwith4s.substack.com/"
+                  >Join Newsletter &nbsp; ›</a
+                >
               </div>
             </div>
 
@@ -1004,7 +1025,7 @@
           </svg>
         </div>
         <div class="container">
-          <div class="row">
+          <div class="row custom-shape-divider-bottom">
             <div class="col-lg-6 mb-4">
               <h2 class="section-heading">
                 Mantras of Happy Life is not a motivational book,
@@ -1012,7 +1033,30 @@
               </h2>
 
               <div class="content-divider"></div>
+            </div>
 
+            <div class="col-lg-6 mb-4">
+              <div class="info-box">
+                <p class="info-text">It's a practical lens to understand</p>
+
+                <ul>
+                  <li>why everyday decisions feel heavy,</li>
+
+                  <li>why success often feels empty,</li>
+
+                  <li>and how leaders can move from pressure to clarity.</li>
+                </ul>
+
+                <p class="info-text">
+                  The book introduces the 4 States (4S) that quietly shape how
+                  we think, decide, and lead.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row custom-shape-divider-bottom2">
+            <div class="col-md-6">
               <p class="intro-paragraph">
                 The book introduces the
                 <span class="bold-highlight">4 States (4S)</span> that quietly
@@ -1020,28 +1064,16 @@
                 awareness.
               </p>
             </div>
-
-            <div class="col-lg-6 mb-4">
-              <div class="info-box">
-                <p class="info-text">
-                  It's a practical lens to understand why everyday decisions
-                  feel heavy, why success often feels empty, and how leaders can
-                  move from pressure to clarity.
-                </p>
-                <p class="info-text">
-                  The book introduces the 4 States (4S) that quietly shape how
-                  we think, decide, and lead—often without our awareness.
-                </p>
-                <p class="info-text" style="margin-bottom: 10px">
-                  Every leader operates from one dominant inner state at any
-                  given moment:
-                </p>
-                <p class="info-text" style="margin-bottom: 0">
-                  <strong
-                    >Leadership quality changes when the state changes.</strong
-                  >
-                </p>
-              </div>
+            <div class="col-md-6">
+              <p class="info-text" style="margin-bottom: 10px">
+                Every leader operates from one dominant inner state at any given
+                moment:
+              </p>
+              <p class="info-text" style="margin-bottom: 10px">
+                <strong
+                  >Leadership quality changes when the state changes.</strong
+                >
+              </p>
             </div>
           </div>
 
@@ -1359,10 +1391,12 @@
               <p><span class="highlight-circle">Just useful thinking.</span></p>
             </div> -->
           </div>
-          <form class="sub-form">
-            <input type="text" placeholder="Enter Email or phone No." />
-            <button type="submit">Join the Newsletter</button>
-          </form>
+          <br />
+          <a
+            class="btn btn-orange py-3 mt-3"
+            href="https://leadershipwith4s.substack.com/"
+            >Join The Newsletter &nbsp; ›</a
+          >
         </div>
       </section>
 
